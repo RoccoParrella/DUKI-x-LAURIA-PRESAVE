@@ -1,0 +1,25 @@
+simplyCountdown('#countdown', {
+    year: 2022, 
+    month: 6, 
+    day: 23, 
+    hours: 3, 
+    minutes: 0, 
+    seconds: 0,
+    words: {
+        days: { singular: 'DIA', plural: 'DIAS' },
+        hours: { singular: 'HORA', plural: 'HORAS' },
+        minutes: { singular: 'MINUTO', plural: 'MINUTOS' },
+        seconds: { singular: 'SEGUNDO', plural: 'SEGUNDOS' },
+    },
+    plural: true,
+    inline: false,
+    inlineClass: 'simply-countdown-inline',
+    enableUtc: true,
+    onEnd: function() { return; },
+    refresh: 1000,
+    sectionClass: 'simply-section',
+    amountClass: 'simply-amount',
+    wordClass: 'simply-word',
+    zeroPad: false,
+    countUp: false
+});
